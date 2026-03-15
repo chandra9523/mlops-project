@@ -42,7 +42,7 @@ pipeline {
 
         stage('Push Docker Image') {
             steps {
-                sh 'docker push cbdocker2525/mlops:latest'
+                sh 'docker push cbdocker2525/iris-ml-model:latest'
             }
         }
 

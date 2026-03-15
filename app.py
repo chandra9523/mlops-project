@@ -4,7 +4,7 @@ import joblib
 import numpy as np
 
 app = FastAPI()
-
+#pickle file
 model = joblib.load("model.pkl")
 
 

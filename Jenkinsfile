@@ -12,7 +12,7 @@ pipeline {
 
         stage('Push Docker Image') {
             steps {
-                sh 'docker push cbdocker2525/iris-ml-model'
+                sh 'docker push cbdocker2525/iris-ml-model:latest'
             }
         }
 

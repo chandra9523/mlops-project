@@ -1,4 +1,3 @@
-
 pipeline {
 
     agent any
@@ -11,7 +10,11 @@ pipeline {
             }
         }
 
-        
+        stage('Train Model') {
+            steps {
+                sh 'python train.py'
+            }
+        }
 
         stage('Build Docker Image') {
             steps {
@@ -24,7 +27,5 @@ pipeline {
                 sh 'docker push cbdocker2525/iris-ml-model:latest'
             }
         }
-
-    
     }
 }

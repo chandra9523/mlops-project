@@ -36,7 +36,7 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t chandra9523/mlops:latest .'
+                sh 'docker build -t cbdocker2525/iris-ml-model:latest .'
             }
         }
 

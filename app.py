@@ -3,6 +3,7 @@ from pydantic import BaseModel
 import joblib
 import numpy as np
 
+#creating object of fastapi
 app = FastAPI()
 #pickle file
 model = joblib.load("model.pkl")
